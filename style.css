@@ -1,0 +1,120 @@
+a{
+	text-decoration:none;
+}
+.content{
+	width:88%;
+	margin:0 auto;
+	overflow:auto;
+}
+#mobile_menu{
+	display:none;
+}
+#mobile_menu:hover + #main_menu{
+	display:block;
+    clear: both;
+    text-align: right;
+}
+.align_content{
+	width: 90%;
+    margin: 0 auto;
+}
+header{
+	overflow:hidden;
+	margin-top:20px;
+}
+#logo{
+	float:left;
+	font-size: 50px;
+}
+#main_menu{
+	margin-top: 2vw;
+	float:right;
+}
+#main_menu li{
+	float:left;
+	list-style-type:none;
+	margin-left:10px;
+}
+#main_menu a{
+	font-size:22px;
+	color:black;
+	font-weight:900;
+}
+#middle_bg{
+	width:100%;
+	background-image:url("images/banner.png");
+	height:550px;
+	background-repeat:no-repeat;
+	background-size:contain;
+	width:95%;
+	margin:0 auto;
+	
+}
+#middle_bg p{
+	color: white;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 20%;
+    display: inline-block;
+    width: 100%;
+}
+#middle_bg{
+	position:relative;
+}
+#banner_slogan span{
+	transform: rotate(-90deg);
+    margin-left: -7vw;
+    margin-top: 38%;
+    position: absolute;
+    color: black;
+}
+@media screen and (max-width : 1260px){
+	.content{
+		width:80%;
+	}
+	#banner_slogan span{
+		margin-left: -11%;
+	}
+}
+@media screen and (max-width : 1130px){
+	#banner_slogan span{
+		margin-left: -12%;
+	}
+}
+@media screen and (max-width : 1020px){
+	#banner_slogan span{
+		margin-left: -13%;
+	}
+}
+@media screen and (max-width : 960px){
+	#logo{
+		text-align:center;
+		width:100%;
+	}
+	#main_menu{
+		margin: 0 auto;
+		display: table;
+		float:none;
+	}
+}
+@media screen and (max-width : 580px){
+	#main_menu a{
+		font-size:19px;
+	}
+}
+@media screen and (max-width : 520px){
+	#logo{
+		width:50%;
+		font-size: 30px;
+	}
+	#main_menu li{
+		float:none;
+	}
+	#main_menu{
+		display:none;
+	}
+	#mobile_menu{
+		display:block;
+		float:right;
+	}
+}
